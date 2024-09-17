@@ -1,7 +1,7 @@
 from db.models import CinemaHall
 
 
-def get_cinema_halls():
+def get_cinema_halls() -> CinemaHall:
     return CinemaHall.objects.all()
 
 
@@ -15,4 +15,3 @@ def create_cinema_hall(
         rows=hall_rows,
         seats_in_row=hall_seats_in_row
     )
-
